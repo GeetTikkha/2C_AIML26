@@ -1,0 +1,30 @@
+<html>
+<head>
+    <script>
+        function Pattern()
+        {
+            let output = "";
+            for (let i = 1; i <= 4; i++)
+            {
+                for (let j = 1; j <= i; j++)
+                {
+                    output += "*";
+                }
+                output += "<br>";
+            }
+            for (let i = 3; i >= 1; i--)
+            {
+                for (let j = 1; j <= i; j++)
+                {
+                    output += "*";
+                }
+                output += "<br>";
+            }
+            document.write(output);
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="Print Pattern" onclick="Pattern()">
+</body>
+</html>
