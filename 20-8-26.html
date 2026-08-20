@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <script>
+            // let Student = new Object();
+            // Student.name = "Geet Tikkha";
+            // Student.id = "0075";
+            // Student.city = "Ghaziabad";
+            // Student.learning = function()
+            // {
+            //     console.log("learning tech courses");
+            // }
+            // console.log(Student.name);
+            // Student.learning();  
+            
+            
+
+            function student (id, name, city)
+            {
+                this.id = id;
+                this.name = name;
+                this.city = city;
+            }
+            let st1 = new student(101, "geet", "ghaziabad");
+            let st2 = new student(102, "anu", "ghaziabad");
+            console.log(st1.id);
+            console.log(st1.name);
+            console.log(st1.city);
+            console.log(st2.id);
+            console.log(st2.name);
+            console.log(st2.city);
+        </script>
+    </head>
+</html>
