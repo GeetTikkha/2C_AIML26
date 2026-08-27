@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <script>
+            let product = new Object();
+            product.id = "1001";
+            product.name = "Pen";
+            product.price = "20";
+            product.quantity = "10";
+            console.log(product);
+
+            function cost()
+            {
+                return product.price * product.quantity;
+            }
+
+            console.log(cost());
+
+            function update()
+            {
+                let newquantity = "15";
+                product.quantity = newquantity;
+                return product.quantity;
+            }
+            
+            console.log(update());
+            console.log(product);
+            
+        </script>
+    </head>
+</html>
