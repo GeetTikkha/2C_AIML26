@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <script>
+            // spread operator
+        //     let data = [10, 20, 30, 40];
+        //     function sum (...data)
+        // {
+        //         let sum = 0;
+        //         for (let i of data)
+        //     {
+        //         sum += i;
+        //     }
+        // }
+        //     console.log(sum);
+        //     console.log(...data);
+        //     console.log(data);
+        //     console.log([...data]);
+
+
+        // let a = [12, 13];
+        // let b = [10, 11];
+        // // c = a.concat(b);
+        // let c = [...a, ...b];    // works in place of concat function
+        // console.log(c);
+
+
+        // object literals
+
+
+        // let name = "Geet";
+        // let rollno = "075";
+        // name of variables should be same
+        // let student = 
+        // {
+        //     name : name;
+        //     rollno : rollno;
+        // }
+        // let student = {name, rollno};
+        // console.log(student.name);
+        // console.log(student.rollno);
+
+
+        // let n = "name";
+        // let student = {[n] : "Geet"}
+        // console.log(student.name);
+        // let student = 
+        // {
+        // ["first" + n] : "Geet",
+        // ["last" + n] : "Tikkha"
+        // }
+        // console.log(student.firstname);
+        // console.log(student.lastname);
+
+
+
+    //     let name = "Geet";
+    //     let roll = "075";
+    //     let student = {name, roll,
+    //     display()
+    //     {
+    //         console.log(this.name, this.roll);
+    //     },
+    // }
+    // console.log(student.display());
+
+
+
+    // array destructuring
+    let student = ["geet", "075", "ghaziabad", "201002"];
+
+    // let name = student[0];
+    // let roll = student[1];
+    // let city = student[2];
+    // let pin = student[3];
+
+    // instead of this
+
+    let [name, roll, city, pin] = student;
+    console.log(name);
+    console.log(roll);
+    console.log(city);
+    console.log(pin);
+        </script>
+    </head>
+</html>
