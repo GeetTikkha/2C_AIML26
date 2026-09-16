@@ -1,0 +1,66 @@
+<!-- OOPS IN JAVASCRIPT -->
+<!-- 1. class
+2.object 
+3. constructor
+4. data member 
+5. member function 
+6. static variable and function 
+7. inheritance -->
+
+<!--static method ya variable ko hamesha pehle memory milegi-->
+
+
+<html>
+    <head>
+        <script>
+            // class student
+            // {
+            //     constructor()
+            //     {
+            //         console.log("hello student");
+            //     }
+            // }
+            // let s1 = new student();
+
+            // class student
+            // {
+            //     constructor(name)
+            //     {
+            //         this.name = name;
+            //         console.log(this.name);
+            //     }
+            // }
+            // let s2 = new student("geet");
+
+            // class student
+            // {
+            //     constructor(name)
+            //     {
+            //         this.name = name;
+            //     }
+            //     info()
+            //     {
+            //         console.log("student inforamtion");
+            //         console.log(this.name);
+            //     }
+            // }
+            // let s1 = new student("geet");
+            // s1.info();
+
+            class student
+            {
+                static name = "geet";
+                static display()
+                {
+                    console.log(name);
+                }
+            }
+            let s1 = new student;
+            s1.display();4
+
+
+
+
+        </script>
+    </head>
+</html>
