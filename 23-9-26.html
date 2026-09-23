@@ -41,7 +41,7 @@
 
 <!-- 2. Bank Account Management System -->
 
-
+<!-- 
 <html>
     <head>
         <script>
@@ -90,4 +90,47 @@
                 bankAccount.bankInfo();
         </script>
     </head>
+</html> -->
+
+
+<!-- inheritance -->
+<!-- 3. Employee and Manager Payroll System -->
+
+<html>
+<head>
+<script>
+
+class Employee
+{
+    constructor(id, name, basicSalary)
+    {
+        this.id = id;
+        this.name = name;
+        this.basicSalary = basicSalary;
+    }
+
+    calculateSalary()
+    {
+        return this.basicSalary;
+    }
+}
+
+class Manager extends Employee
+{
+    constructor(id, name, basicSalary, incentive)
+    {
+        super(id, name, basicSalary);
+        this.incentive = incentive;
+    }
+    calculateSalary()
+    {
+        return this.basicSalary + this.incentive;
+    }
+}
+let e1 = new Employee("075", "Geet", 100);
+let m1 = new Manager("002", "Aanya", 200, 50);
+console.log("Employee Salary:", e1.calculateSalary());
+console.log("Manager Salary:", m1.calculateSalary());
+</script>
+</head>
 </html>
