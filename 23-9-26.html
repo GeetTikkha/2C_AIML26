@@ -137,7 +137,7 @@ console.log("Manager Salary:", m1.calculateSalary());
 
 
 <!-- E-Commerce Product System -->
-
+<!-- 
 <html>
     <head>
         <script>
@@ -192,6 +192,74 @@ console.log("Manager Salary:", m1.calculateSalary());
             let e1 = new electronic("103", "TV", 40000, "2 years");
             e1.display();
 
+
+        </script>
+    </head>
+</html> -->
+
+
+<!-- 5. Online Cab Booking System -->
+
+<html>
+    <head>
+        <script>
+            class vehicle
+            {
+                constructor(vehicleNo, driverName, distance)
+                {
+                    this.vehicleNo = vehicleNo;
+                    this.driverName = driverName;
+                    this.distance = distance;
+                }
+                calculateFare()
+                {
+                    let cost = 20;
+                    let fare = cost * this.distance;
+                    return fare;
+                }
+                static display()
+                {
+                    console.log(this.vehicleNo);
+                    console.log(this.driverName);
+                    console.log(this.distance);
+                }
+            }
+            class car extends vehicle
+            {
+                constructor(vehicleNo, driverName, distance)
+                {
+                    super(vehicleNo, driverName, distance);
+                }
+                calculateFare()
+                {
+                    let cost = 15;
+                    let fare = cost * this.distance;
+                    return fare;
+                }
+            }
+            class bike extends vehicle
+            {
+                constructor(vehicleNo, driverName, distance)
+                {
+                    super(vehicleNo, driverName, distance);
+                }
+                calculateFare()
+                {
+                    let cost = 8;
+                    let fare = cost * this.distance;
+                    return fare;
+                }
+            }
+            let v1 = new vehicle("1", "a", "10");
+            let v2 = new vehicle("2", "b", "20");
+            let c1 = new car("3", "c", "30");
+            let b1 = new bike("4", "d", "40");
+            console.log(v1.calculateFare());
+            vehicle.display();
+            console.log(c1.calculateFare());
+            console.log(b1.calculateFare());
+            console.log(c1.calculateFare() - b1.calculateFare
+        ());
 
         </script>
     </head>
