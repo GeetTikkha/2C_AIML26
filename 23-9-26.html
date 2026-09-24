@@ -95,7 +95,7 @@
 
 <!-- inheritance -->
 <!-- 3. Employee and Manager Payroll System -->
-
+<!-- 
 <html>
 <head>
 <script>
@@ -133,4 +133,66 @@ console.log("Employee Salary:", e1.calculateSalary());
 console.log("Manager Salary:", m1.calculateSalary());
 </script>
 </head>
+</html> -->
+
+
+<!-- E-Commerce Product System -->
+
+<html>
+    <head>
+        <script>
+            class product
+            {
+                constructor(product_id, product_name, price)
+                {
+                    this.product_id = product_id;
+                    this.product_name = product_name;
+                    this.price = price;
+                }
+                getDiscountedPrice(discount)
+                {
+                    this.price = this.price - discount;
+                }
+                static compareProducts(p1, p2)
+                {
+                    if (p1.price > p2.price)
+                {
+                    console.log(p1.price);
+                }
+                else
+                {
+                    console.log(p2.price);
+                }
+                }
+                display()
+                {
+                    console.log( this.product_id);
+                    console.log(this.product_name);
+                    console.log(this.price);
+                }
+            }
+            class electronic extends product
+            {
+                constructor(product_id, product_name, price, warrenty)
+                {
+                    super(product_id, product_name, price);
+                    this.warrenty = warrenty;
+                }
+                display()
+                {
+                    super.display();
+                    console.log(this.warrenty);
+                }
+            }
+            let p1 = new product("101", "Laptop", 50000);
+            let p2 = new product("102", "Mobile", 30000);
+            p1.getDiscountedPrice(5000);
+            p1.display();
+            p2.display();
+            let e1 = new electronic("103", "TV", 40000, "2 years");
+            e1.display();
+
+
+        </script>
+    </head>
 </html>
