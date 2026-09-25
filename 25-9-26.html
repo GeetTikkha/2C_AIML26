@@ -1,0 +1,65 @@
+<!-- 6. Hospital Management System -->
+
+<html>
+    <head>
+        <script>
+            class person
+            {
+                static count = 0;
+                constructor(id, name, age)
+                {
+                    this.id = id;
+                    this.name = name;
+                    this.age = age;
+                }
+                displayDetails()
+                {
+                    console.log(this.id);
+                    console.log(this.name);
+                    console.log(this.age);
+                }
+            }
+            class doctor extends person
+            {
+                constructor(id, name, age, specialization, consultationFee)
+                {
+                    super(id, name, age);
+                    this.specialization = specialization;
+                    this.consultationFee = consultationFee;
+                }
+                displayDetails()
+                {
+                    super.displayDetails();
+                    console.log(this.specialization);
+                    console.log(this.consultationFee);
+                }
+            }
+            class patient extends person
+            {
+                constructor(id, name, age, disease, roomNo)
+                {
+                    super(id, name, age);
+                    this.disease = disease;
+                    this.roomNo = roomNo;
+                }
+                displayDetails()
+                {
+                    super.displayDetails();
+                    console.log(this.disease);
+                    console.log(this.roomNo);
+                }
+            }
+            let p1 = new person("1", "a", "20");
+            let d1 = new doctor("2", "b", "25", "dentist", "400");
+            let d2 = new doctor("3", "c", "30", "ent", "500");
+            let pa1 = new patient("4", "d", "10", "fever", "502");
+            let pa2 = new patient("5", "e", "40", "cold", "504");
+            p1.displayDetails();
+            d1.displayDetails();
+            d2.displayDetails();
+            pa1.displayDetails();
+            pa2.displayDetails();
+            console.log(person.count);
+        </script>
+    </head>
+</html>
